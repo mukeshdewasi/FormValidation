@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="8dp"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      app:errorEnabled="true"
+      >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the Name"
+        android:inputType="textPersonName"/>
+
+  </com.google.android.material.textfield.TextInputLayout>
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="8dp"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      app:errorEnabled="true">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the Email"
+        android:inputType="textEmailAddress"/>
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="8dp"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      app:errorEnabled="true"
+      app:helperText="Required"
+      app:helperTextTextColor="#FF042A"
+      app:counterEnabled="true"
+      app:passwordToggleEnabled="true"
+      >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:lines="1" />
+  </com.google.android.material.textfield.TextInputLayout>
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="8dp"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      app:errorEnabled="true"
+      app:counterMaxLength="10"
+      app:helperText="Required"
+      app:helperTextTextColor="#F30619">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:lines="1"
+        android:maxLength="10"/>
+
+  </com.google.android.material.textfield.TextInputLayout>
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="8dp"
+      style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      android:inputType="none"/>
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+
+
+</LinearLayout>
